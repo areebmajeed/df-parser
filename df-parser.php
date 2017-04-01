@@ -50,7 +50,7 @@ function parseDfResponse($data) {
             $join['filesystems'][$key]['1k_blocks'] = $further[1];
             $join['filesystems'][$key]['used'] = $further[2];
             $join['filesystems'][$key]['size'] = $further[3];
-            $join['filesystems'][$key]['usage_percentage'] = $further[3];
+            $join['filesystems'][$key]['usage_percentage'] = $further[4];
             $join['filesystems'][$key]['mount_point'] = $further[5];
 
         }
