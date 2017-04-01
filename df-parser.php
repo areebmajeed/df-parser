@@ -46,12 +46,12 @@ function parseDfResponse($data) {
             # Spiting with the special character and filling out the values in a new array.
 
             $further = explode("§", $value);
-            $join['filesystems'][$key]['name'] = $further[0];
-            $join['filesystems'][$key]['1k_blocks'] = $further[1];
-            $join['filesystems'][$key]['used'] = $further[2];
-            $join['filesystems'][$key]['size'] = $further[3];
-            $join['filesystems'][$key]['usage_percentage'] = $further[4];
-            $join['filesystems'][$key]['mount_point'] = $further[5];
+            $join['filesystems'][$further[0]]['1k_blocks'] = $further[1];
+            $join['filesystems'][$further[0]]['used'] = $further[2];
+            $join['filesystems'][$further[0]]['available'] = $further[3];
+            $join['filesystems'][$further[0]]['usage_percentage'] = $further[4];
+            $join['filesystems'][$further[0]]['mount_point'] = $further[5];
+
 
         }
 
