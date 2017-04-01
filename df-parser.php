@@ -10,7 +10,7 @@
  * @link http://areebmajeed.me/
  */
 
-function parseStorageFile($data) {
+function parseDfResponse($data) {
 
     $data = trim($data);
     $data = explode(PHP_EOL, $data);
